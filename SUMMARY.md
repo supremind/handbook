@@ -14,3 +14,7 @@
 * 6 AVA 基础教程
     * [6.4 模型管理](./06-tasks/6.4-snapshot-to-model.md)
     * [6.5 镜像管理](./06-tasks/6.5-custom-image.md)
+* 7 Tutorial: 训练图像分类模型
+    * [7.1 准备数据集 (数据集管理方式)](./07-tutorial-classification/7.1-dataset-with-jsonlist.md)
+    * [7.1 准备数据集 (组/Bucket 共享方式)](./07-tutorial-classification/7.2-dataset-with-sharing.md)
+    * [7.2 开始训练](./07-tutorial-classification/7.3-start-training.md)
