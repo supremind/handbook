@@ -1,7 +1,8 @@
+# Quick Start
 
 在对AVA平台相关基础概念有一定了解后，本文会带领大家在深度学习平台上使用平台提供的公开镜像和示例训练代码，以cifar10作为训练数据集，进行一次完整的训练。
 
-# 创建训练
+## 创建训练
 使用AVA平台，可以训练出满足您需求的模型，训练完成后，可以发布出来进行调用（发布的功能正在紧张开发中）。而训练一个模型，一般需要以下3步。
 ![](https://odum9helk.qnssl.com/FoEs6CA_liRbj8CfNnkP5cIzCOjz)
 
@@ -16,7 +17,7 @@
 输入训练名称“cifar10-demo”和描述（可选）“This is a training demo for cifar10”
 ![](https://odum9helk.qnssl.com/Fv200mjkaIcY8SNtfzm_49Br_deT)
 
-## 选择数据集
+### 选择数据集
 AVA平台提供了很多公开数据集供用户使用，在数据集模块的公开数据集tab就可以找到数据集名称为“cifar10”的数据集。cifar10数据集所包含的内容，请[参考](https://www.cs.toronto.edu/~kriz/cifar.html)。
 ![](https://odum9helk.qnssl.com/FvzOzoBXVFZl5FC-GmZ53PBrU9g0)
 
@@ -31,14 +32,14 @@ AVA平台提供了很多公开数据集供用户使用，在数据集模块的�
 一般情况，我们会把一个数据集拆分成2部分，一部分作为训练集，一部分作为验证集，所以当您选择cifar10的数据集中那条百分比为80%的格式化数据时，系统会提示您是否要选择同时格式化20%的格式化数据作为验证集。点击“确定”按钮，则选中了训练需要的训练集和验证集。
 ![](https://odum9helk.qnssl.com/FpWwMrybovu6EQHR6ORo8k-YYc9A)
 
-## 选择镜像
+### 选择镜像
 镜像提供用户训练模型的环境，用户可以自己构建镜像，也可以使用公开镜像。AVA平台提供了很多公开镜像供用户使用，在本示例中我们将使用mxnet框架的镜像[官方代码](https://github.com/apache/incubator-mxnet/tree/master/example/image-classification)，您可以在镜像模块的公开镜像tab找到“ava-mxnet-py27-gpu”的镜像,请选择版本为“latest”的镜像。此公开镜像自带AVASDK以及用AVASDK编写的示例训练代码，代码路径为“/workspace/examples/trainings/mxnet/simple/start.sh”，代码中对cifar10数据集，使用ResNet50的网络结构训练模型进行训练。
 
 ![](https://odum9helk.qnssl.com/Fm8qpjByEjYYo1odgYVoJ1eQz02j)
 
 点击“下一步”，进入到选择训练资源
 
-## 选择训练资源
+### 选择训练资源
 在训练资源页面，用户可以选择GPU资源或CPU资源，在这里可以选择GPU资源，目前仅提供1张GPU资源。
 执行入口填入的是指定执行的主代码文件，必填，这里填入的是示例代码的路径：/workspace/examples/trainings/mxnet/simple/start.sh
 ![](https://odum9helk.qnssl.com/FhpRjNFJKdi9WU794bvZe3Gror_h)
@@ -65,6 +66,3 @@ AVA平台提供了很多公开数据集供用户使用，在数据集模块的�
 ![](https://odum9helk.qnssl.com/FgCh5xBtPChY2Swl5lDGF0SMkbsC)
 
 恭喜您，至此，您就在AVA平台上训练出了一个模型。
-
-
-
