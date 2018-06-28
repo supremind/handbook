@@ -11,10 +11,10 @@
     * [3.6 镜像](./03-concepts/3.6-image.md)
     * [3.7 模型](./03-concepts/3.7-model.md)
 * [4 Quick Start](./04-quick-start.md)
-* 6 AVA 基础教程
-    * [6.4 模型管理](./06-tasks/6.4-snapshot-to-model.md)
-    * [6.5 镜像管理](./06-tasks/6.5-custom-image.md)
-* 7 Tutorial: 训练图像分类模型
-    * [7.1 准备数据集 (数据集管理方式)](./07-tutorial-classification/7.1-dataset-with-jsonlist.md)
-    * [7.1 准备数据集 (组/Bucket 共享方式)](./07-tutorial-classification/7.2-dataset-with-sharing.md)
-    * [7.2 开始训练](./07-tutorial-classification/7.3-start-training.md)
+* 5 AVA 基础教程
+    * [5.4 模型管理](./05-tasks/5.4-snapshot-to-model.md)
+    * [5.5 镜像管理](./05-tasks/5.5-custom-image.md)
+* 6 Tutorial: 训练图像分类模型
+    * [6.1 准备数据集 (数据集管理方式)](./06-tutorial-classification/6.1-dataset-with-jsonlist.md)
+    * [6.2 准备数据集 (组/Bucket 共享方式)](./06-tutorial-classification/6.2-dataset-with-sharing.md)
+    * [6.3 开始训练](./06-tutorial-classification/6.3-start-training.md)
