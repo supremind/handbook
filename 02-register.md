@@ -1,5 +1,6 @@
-在开始使用深度学习平台之前，您首先需要完成下面2步。
+# AVA 申请注册流程
 
+在开始使用深度学习平台之前，您首先需要完成下面2步。
 
 ![](https://odum9helk.qnssl.com/Fo2tZHtI72llbuGZefBsrB_pQ2sV?imageView2/2/w/400/h/800)
 # 1.注册七牛云Portal

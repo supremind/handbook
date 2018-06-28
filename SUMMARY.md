@@ -10,6 +10,7 @@
     * [3.5 Quota](./03-concepts/3.5-quota.md)
     * [3.6 镜像](./03-concepts/3.6-image.md)
     * [3.7 模型](./03-concepts/3.7-model.md)
+* [4 Quick Start](./04-quick-start.md)
 * 6 AVA 基础教程
     * [6.4 模型管理](./06-tasks/6.4-snapshot-to-model.md)
     * [6.5 镜像管理](./06-tasks/6.5-custom-image.md)
