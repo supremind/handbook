@@ -12,6 +12,9 @@
     * [3.7 模型](./03-concepts/3.7-model.md)
 * [4 Quick Start](./04-quick-start.md)
 * 5 AVA 基础教程
+    * [5.1 数据集管理](./05-tasks/5.1-dataset.md)
+    * [5.2 工作台管理](./05-tasks/5.2-workspace.md)
+    * [5.3 训练管理](./05-tasks/5.3-training.md)
     * [5.4 模型管理](./05-tasks/5.4-snapshot-to-model.md)
     * [5.5 镜像管理](./05-tasks/5.5-custom-image.md)
 * 6 Tutorial: 训练图像分类模型

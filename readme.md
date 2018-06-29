@@ -5,9 +5,9 @@
 ## 编辑
 
 - `SUMMARY.md` 是文档目录, 添加新章节需要更新该文档
-- 图片放 `images` 目录, 按章节分子目录, 如 `images/ch-01/ava-concepts.jpg`, 在正文中即可这样引用 (使用相对路径, 这里假设文档在项目根目录, 例如 `01-introduction.md`)
+- 图片放 `images` 目录, 按章节分子目录, 如 `images/ch-01/ava-concepts.jpg`, 在正文中即可这样引用 (使用相对项目根目录的路径)
     ```markdown
-    ![AVA](./images/ch-01/ava-concepts.jpg)
+    ![AVA](/images/ch-01/ava-concepts.jpg)
     ```
 
 ## 工具
