@@ -23,7 +23,7 @@
 
 ### 选择数据集
 
-AVA 平台提供了很多公开数据集供用户使用, 在数据集模块的公开数据集 tab 就可以找到数据集名称为 "cifar10" 的数据集.  CIFAR-10 数据集所包含的内容, 请参考[官网](https://www.cs.toronto.edu/~kriz/cifar.html). 
+AVA 平台提供了很多公开数据集供用户使用, 在数据集模块的公开数据集 tab 就可以找到数据集名称为 "cifar10" 的数据集.  CIFAR-10 数据集所包含的内容, 请参考[官网](https://www.cs.toronto.edu/~kriz/cifar.html).
 
 ![](https://odum9helk.qnssl.com/FvzOzoBXVFZl5FC-GmZ53PBrU9g0)
 
