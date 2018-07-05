@@ -21,3 +21,4 @@
     * [6.1 准备数据集 (数据集管理方式)](./06-tutorial-classification/6.1-dataset-with-jsonlist.md)
     * [6.2 准备数据集 (组/Bucket 共享方式)](./06-tutorial-classification/6.2-dataset-with-sharing.md)
     * [6.3 开始训练](./06-tutorial-classification/6.3-start-training.md)
+* [7 Tutorial: 训练 OCR 模型](/07-tutorial-OCR/ocr.md)
