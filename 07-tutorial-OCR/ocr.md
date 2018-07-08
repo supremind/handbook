@@ -151,3 +151,6 @@ $ cp -r example /workspace/mnt/group/<your-group>/<your-name>/.
     ```
 
 详细步骤可查阅[训练管理](/05-tasks/5.3-training.md)
+
+
+
