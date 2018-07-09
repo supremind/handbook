@@ -26,7 +26,7 @@ SSD，英文全称 Single Shot Multibox Detector，是用于目标检测的算�
 
 5. 点击创建，等待工作台创建完成
 
-#### 准备
+### 准备
 
 1. 如果你使用的是 mxnet-python API，你可能已经有了 python 模块，如果没有的话，此处我们需要安装：cv2, matplotlib 和 numpy，使用 apt-get 命令：
 
@@ -48,7 +48,7 @@ SSD，英文全称 Single Shot Multibox Detector，是用于目标检测的算�
 
     把 example 目录拷贝的自己的共享目录, 方便运行。
 
-#### **训练模型**
+### **训练模型**
 
 1. 此示例仅适用于在 Pascal VOC 数据集上的训练。首先下载数据集，再将他们解压至 model 文件夹目录下： 
 
@@ -97,7 +97,7 @@ SSD，英文全称 Single Shot Multibox Detector，是用于目标检测的算�
 
 5. 输入 `python3 demo.py —help` 获得更多帮助
 
-#### **评估训练模型**
+### **评估训练模型**
 
 1. 确保 val.rec 为验证数据集，运行 `python3 evaluate.py --gpus 0,1 --batch-size 128 --epoch 2`
 
@@ -106,7 +106,7 @@ SSD，英文全称 Single Shot Multibox Detector，是用于目标检测的算�
     ![](/images/ch-08/evaluate.png)
 
 
-#### **示例**
+### **示例**
 
 1. 首先下载模型 [ssd_resnet50_0712.zip](https://github.com/zhreshold/mxnet-ssd/releases/download/v0.6/resnet50_ssd_512_voc0712_trainval.zip)，将其拷贝至你的 model 目录下  
     ![](/images/ch-08/installMode.png)
