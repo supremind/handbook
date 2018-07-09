@@ -23,3 +23,4 @@
     * [6.3 开始训练](./06-tutorial-classification/6.3-start-training.md)
 
 * [7 Tutorial: 训练 OCR 模型](/07-tutorial-OCR/ocr.md)
+* [8 Tutorial: 训练 SSD 模型](/08-tutorial-SSD/ssd.md)
