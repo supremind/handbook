@@ -2,9 +2,9 @@
 
 SSD，英文全称 Single Shot Multibox Detector，是用于目标检测的算法。常见的目标检测算法，如 Faster R-CNN ，存在着速度慢的缺点。SSD 不仅提高了速度，而且提高了准确度。本教程会通过训练模型、评估模型并且演示一个实例，为 AVA 深度学习平台使用者提供在 MXNET 框架上，使用 SSD 模型对目标进行检测。
 
-### **环境准备**
+### 环境准备
 
-#### **创建**AVA工作台
+#### 创建 AVA 工作台
 
 1. 从工作台标签进入，选择【新建工作台】
 
@@ -31,9 +31,11 @@ SSD，英文全称 Single Shot Multibox Detector，是用于目标检测的算�
 1. 如果你使用的是 mxnet-python API，你可能已经有了 python 模块，如果没有的话，此处我们需要安装：cv2, matplotlib 和 numpy，使用 apt-get 命令：
 
     首先进行 apt-get update 操作： 
+   
     ![](/images/ch-08/aptGetUpdate.png)
 
     再进行`sudo apt-get install python-opencv python-matplotlib python-numpy` 
+  
     ![](/images/ch-08/installPythonPakage.png)
 
 2. 由于我们要使用 MXNET 来运行 SSD 训练，进一步配置：
@@ -48,7 +50,7 @@ SSD，英文全称 Single Shot Multibox Detector，是用于目标检测的算�
 
     把 example 目录拷贝的自己的共享目录, 方便运行。
 
-### **训练模型**
+### 训练模型
 
 1. 此示例仅适用于在 Pascal VOC 数据集上的训练。首先下载数据集，再将他们解压至 model 文件夹目录下： 
 
@@ -79,6 +81,7 @@ SSD，英文全称 Single Shot Multibox Detector，是用于目标检测的算�
     ```
 
 2. 我们要使用 VOC20017 和 VOC2012 里的 trainval 数据集， VOC2007 和 VOC2012 都在 VOCdevkit 文件夹下，然后将 VOCdevkit 和 data / VOCdevkit 两个文件夹链接到一起， 
+   
     ![](/images/ch-08/link.png)
 
 3. 创建训练：
@@ -90,6 +93,7 @@ SSD，英文全称 Single Shot Multibox Detector，是用于目标检测的算�
     ![](/images/ch-08/train.png)
 
     可以看到每个 batch 训练的速度和损失： 
+  
     ![](/images/ch-08/trainOutcome.png)
 
     默认情况下，此示例使用的 batch-size 为 32，learning_rate 为 0.002. 我们可以根据不同的配置来微调一下其中的参数，例如，如果你用的是四核的 GPU ：
@@ -97,7 +101,7 @@ SSD，英文全称 Single Shot Multibox Detector，是用于目标检测的算�
 
 5. 输入 `python3 demo.py —help` 获得更多帮助
 
-### **评估训练模型**
+### 评估训练模型
 
 1. 确保 val.rec 为验证数据集，运行 `python3 evaluate.py --gpus 0,1 --batch-size 128 --epoch 2`
 
@@ -106,11 +110,13 @@ SSD，英文全称 Single Shot Multibox Detector，是用于目标检测的算�
     ![](/images/ch-08/evaluate.png)
 
 
-### **示例**
+### 示例
 
 1. 首先下载模型 [ssd_resnet50_0712.zip](https://github.com/zhreshold/mxnet-ssd/releases/download/v0.6/resnet50_ssd_512_voc0712_trainval.zip)，将其拷贝至你的 model 目录下  
+  
     ![](/images/ch-08/installMode.png)
     解压文件：`apt-get install zip`
+  
     ![](/images/ch-08/unzip2.png)
 
     解压后，ls查看文件夹内得到了 ssd_resnet50_512-0000.params 和 ssd_resnet50_512-symbol.json 
@@ -120,9 +126,11 @@ SSD，英文全称 Single Shot Multibox Detector，是用于目标检测的算�
 2. 运行
 
     接着下载测试要用的图片数据集 
+  
     ![](/images/ch-08/demoDataset.png)
 
     然后运行示例： 
+   
     ![](/images/ch-08/runDemo.py.jpg)
     如果出现 No module named ‘_tkinter’ 的错误，说明没有安装 python3-tk 包，进行安装：`apt-get install python3-tk`
 
