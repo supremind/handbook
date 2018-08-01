@@ -17,6 +17,7 @@
     * [5.3 训练管理](./05-tasks/5.3-training.md)
     * [5.4 模型管理](./05-tasks/5.4-snapshot-to-model.md)
     * [5.5 镜像管理](./05-tasks/5.5-custom-image.md)
+    * [5.6 使用 SSH 登录工作台](./05-tasks/5.6-ssh.md)
 * 6 Tutorial: 训练图像分类模型
     * [6.1 准备数据集 (数据集管理方式)](./06-tutorial-classification/6.1-dataset-with-jsonlist.md)
     * [6.2 准备数据集 (组/Bucket 共享方式)](./06-tutorial-classification/6.2-dataset-with-sharing.md)
