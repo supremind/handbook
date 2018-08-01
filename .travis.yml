@@ -1,7 +1,6 @@
 language: node_js
 
-node_js:
-  - "8"
+node_js: 7
 
 # 缓存依赖
 cache:
@@ -30,11 +29,11 @@ branches:
 # GitHub Pages 部署
 deploy:
   provider: pages
-  skip_cleanup: true
+  skip-cleanup: true
   # 在项目仪表盘的 Settings -> Environment Variables 中配置
-  github_token: $GITHUB_TOKEN
+  github-token: $GITHUB_TOKEN
   # 将 build 的内容推送到默认的 gh-pages 分支上，并不会连带 build 目录一起
-  local_dir: _book
+  local-dir: _book
   name: $GIT_NAME
   email: $GIT_EMAIL
   on:
