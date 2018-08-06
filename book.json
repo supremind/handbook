@@ -1,0 +1,16 @@
+{
+    "plugins": [
+        "-lunr",
+        "-search",
+        "search-plus",
+        "alerts",
+        "edit-link",
+        "copy-code-button"
+    ],
+    "pluginsConfig": {
+        "edit-link": {
+            "base": "https://github.com/qiniu-ava/handbook/edit/master",
+            "label": "Edit This Page"
+        }
+    }
+}

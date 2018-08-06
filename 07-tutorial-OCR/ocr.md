@@ -135,9 +135,10 @@ $ cp -r example /workspace/mnt/group/<your-group>/<your-name>/.
     python3 lstm_ocr_infer.py --prefix ocr --epoch 100 sample1.jpg
     ```
 
-    > 注意: 
-    > 1. 需要把上面的 `<your-group>` 和 `<your-name>` 改成你自己的名字, 然后确保系统中存在 DejaVuSan.ttf 字体文件, 或更换其它字体文件
-    > 2. `myinfer.sh` 文件需要有可执行权限
+    > **[info] Tips:**
+    >
+    > - 需要把上面的 `<your-group>` 和 `<your-name>` 改成你自己的名字, 然后确保系统中存在 DejaVuSan.ttf 字体文件, 或更换其它字体文件
+    > - `myinfer.sh` 文件需要有可执行权限
 
 2. 创建训练与创建工作台流程类似, 不过需要为训练指定一个可执行入口, 这里指定为 `/workspace/mnt/group/<your-group>/<your-name>/example/myinfer.sh`
 
