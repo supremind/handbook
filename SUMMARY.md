@@ -1,16 +1,15 @@
 # Summary
 
 * [1 概述](./01-introduction.md)
-* [2 AVA 申请注册流程](./02-register.md)
+* [2 Quick Start](./02-quick-start.md)
 * 3 AVA 基础概念
     * [3.1 数据集](./03-concepts/3.1-dataset.md)
     * [3.2 共享存储](./03-concepts/3.2-shared-storage.md)
-    * [3.3 工作台](./03-concepts/3.3-workspace.md)
-    * [3.4 训练任务](./03-concepts/3.4-training.md)
-    * [3.5 Quota](./03-concepts/3.5-quota.md)
-    * [3.6 镜像](./03-concepts/3.6-image.md)
-    * [3.7 模型](./03-concepts/3.7-model.md)
-* [4 Quick Start](./04-quick-start.md)
+    * [3.3 工作台与训练](./03-concepts/3.3-workspace-and-training.md)
+    * [3.4 Quota](./03-concepts/3.4-quota.md)
+    * [3.5 镜像](./03-concepts/3.5-image.md)
+    * [3.6 模型](./03-concepts/3.6-model.md)
+* [4 AVA 申请注册流程](./04-register.md)
 * 5 AVA 基础教程
     * [5.1 数据集管理](./05-tasks/5.1-dataset.md)
     * [5.2 工作台管理](./05-tasks/5.2-workspace.md)
