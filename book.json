@@ -5,7 +5,8 @@
         "search-plus",
         "alerts",
         "edit-link",
-        "copy-code-button"
+        "copy-code-button",
+        "anchors"
     ],
     "pluginsConfig": {
         "edit-link": {
