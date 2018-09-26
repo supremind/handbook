@@ -24,3 +24,4 @@
 
 * [7 Tutorial: 训练 OCR 模型](/07-tutorial-OCR/ocr.md)
 * [8 Tutorial: 训练 SSD 模型](/08-tutorial-SSD/ssd.md)
+* [9 FAQ](/09-faq/faq.md)
