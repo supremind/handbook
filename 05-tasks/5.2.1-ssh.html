@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>5.2 工作台管理 · GitBook</title>
+        <title>5.2.1 使用 SSH 登录工作台 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -65,10 +65,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="5.2.1-ssh.html" />
+    <link rel="next" href="5.2.2-snapshot.html" />
     
     
-    <link rel="prev" href="5.1-dataset.html" />
+    <link rel="prev" href="5.2-workspace.html" />
     
 
     </head>
@@ -273,7 +273,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6.2" data-path="5.2-workspace.html">
+        <li class="chapter " data-level="1.6.2" data-path="5.2-workspace.html">
             
                 <a href="5.2-workspace.html">
             
@@ -287,7 +287,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.2.1" data-path="5.2.1-ssh.html">
+        <li class="chapter active" data-level="1.6.2.1" data-path="5.2.1-ssh.html">
             
                 <a href="5.2.1-ssh.html">
             
@@ -489,7 +489,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >5.2 工作台管理</a>
+        <a href=".." >5.2.1 使用 SSH 登录工作台</a>
     </h1>
 </div>
 
@@ -504,60 +504,75 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5DE5;&#x4F5C;&#x53F0;&#x7BA1;&#x7406;"><a name="&#x5DE5;&#x4F5C;&#x53F0;&#x7BA1;&#x7406;" class="plugin-anchor" href="#&#x5DE5;&#x4F5C;&#x53F0;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5DE5;&#x4F5C;&#x53F0;&#x7BA1;&#x7406;</h1>
-<p>&#x5DE5;&#x4F5C;&#x53F0;&#x6A21;&#x5757;&#x662F;&#x7BA1;&#x7406; AVA &#x5E73;&#x53F0;&#x63D0;&#x4F9B;&#x7684;&#x5BB9;&#x5668;, &#x7528;&#x6237;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; JuypterLab &#x767B;&#x5F55;&#x5230;&#x5BB9;&#x5668;, &#x8FDB;&#x884C;&#x7F16;&#x5199;&#x4EE3;&#x7801;, &#x4FEE;&#x6539;&#x8BAD;&#x7EC3;&#x53C2;&#x6570;, &#x67E5;&#x770B;&#x65E5;&#x5FD7;&#x7B49;. </p>
-<p>&#x5728; AVA &#x5E73;&#x53F0;&#x4E2D;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x542F;&#x52A8; GPU &#x8D44;&#x6E90;&#x7684;&#x5BB9;&#x5668;&#xFF08;&#x4ECD;&#x5728;&#x5F00;&#x53D1;&#x4E2D;&#xFF09;&#x6216;&#x8005; CPU &#x8D44;&#x6E90;&#x7684;&#x5BB9;&#x5668;. &#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x5C31;&#x9700;&#x8981;&#x5728; AVA &#x5E73;&#x53F0;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x53F0;. </p>
-<h2 id="1-&#x521B;&#x5EFA;&#x5DE5;&#x4F5C;&#x53F0;"><a name="1-&#x521B;&#x5EFA;&#x5DE5;&#x4F5C;&#x53F0;" class="plugin-anchor" href="#1-&#x521B;&#x5EFA;&#x5DE5;&#x4F5C;&#x53F0;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x521B;&#x5EFA;&#x5DE5;&#x4F5C;&#x53F0;</h2>
-<p>&#x5728;&#x5DE5;&#x4F5C;&#x53F0;&#x6A21;&#x5757;, &#x70B9;&#x51FB; &#x201C;&#x65B0;&#x5EFA;&#x5DE5;&#x4F5C;&#x53F0;&#x201D;, &#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; CPU &#x7684;&#x5BB9;&#x5668;&#x7528;&#x6765;&#x8C03;&#x8BD5;&#x4EE3;&#x7801;, &#x4FEE;&#x6539;&#x8BAD;&#x7EC3;&#x53C2;&#x6570;, &#x6216;&#x8005;&#x67E5;&#x770B;&#x5176;&#x4ED6;&#x8BAD;&#x7EC3;&#x548C;&#x5DE5;&#x4F5C;&#x53F0;&#x7684;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;.</p>
-<p><img src="../images/ch-05/5.2/workspace-list.png" alt=""></p>
-<p>&#x586B;&#x5199;&#x5DE5;&#x4F5C;&#x53F0;&#x540D;&#x79F0;</p>
-<p><img src="../images/ch-05/5.2/workspace-new.png" alt=""></p>
-<p>&#x521B;&#x5EFA;&#x5DE5;&#x4F5C;&#x53F0;&#x7684;&#x6B65;&#x9AA4;&#x4E0E;&#x521B;&#x5EFA;&#x8BAD;&#x7EC3;&#x4E00;&#x6837;, &#x4E5F;&#x662F; 3 &#x6B65;, &#x5206;&#x522B;&#x662F;</p>
+                                <h1 id="&#x4F7F;&#x7528;-ssh-&#x8FDE;&#x63A5;&#x5DE5;&#x4F5C;&#x53F0;"><a name="&#x4F7F;&#x7528;-ssh-&#x8FDE;&#x63A5;&#x5DE5;&#x4F5C;&#x53F0;" class="plugin-anchor" href="#&#x4F7F;&#x7528;-ssh-&#x8FDE;&#x63A5;&#x5DE5;&#x4F5C;&#x53F0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528; SSH &#x8FDE;&#x63A5;&#x5DE5;&#x4F5C;&#x53F0;</h1>
+<h2 id="&#x914D;&#x7F6E;-ssh-&#x5BA2;&#x6237;&#x7AEF;&#x516C;&#x94A5;"><a name="&#x914D;&#x7F6E;-ssh-&#x5BA2;&#x6237;&#x7AEF;&#x516C;&#x94A5;" class="plugin-anchor" href="#&#x914D;&#x7F6E;-ssh-&#x5BA2;&#x6237;&#x7AEF;&#x516C;&#x94A5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E; SSH &#x5BA2;&#x6237;&#x7AEF;&#x516C;&#x94A5;</h2>
+<p>&#x7528;&#x6237;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x5DF2;&#x6CE8;&#x518C;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x516C;&#x94A5;&#x624D;&#x80FD;&#x767B;&#x5F55;&#x5DE5;&#x4F5C;&#x53F0;. &#x9996;&#x6B21;&#x4F7F;&#x7528;&#x8BF7;&#x751F;&#x6210;&#x5E76;&#x6CE8;&#x518C; SSH &#x5BA2;&#x6237;&#x7AEF;&#x5BC6;&#x94A5;.</p>
 <ol>
-<li><p>&#x9009;&#x62E9;&#x6570;&#x636E;&#x96C6;</p>
-<p> &#x5982;&#x679C;&#x7528;&#x6237;&#x53EA;&#x662F;&#x60F3;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x6765;&#x8FDB;&#x884C;&#x4EE3;&#x7801;&#x7F16;&#x5199;&#x6216;&#x8005;&#x4FEE;&#x6539;&#x8BAD;&#x7EC3;&#x53C2;&#x6570;, &#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x5728;&#x7B2C; 1 &#x6B65;&#x9009;&#x62E9;&#x6570;&#x636E;&#x96C6;&#x4E2D;, &#x70B9;&#x51FB;&#x201C;&#x8DF3;&#x8FC7;&#x8FD9;&#x4E00;&#x6B65;&gt;&gt;&#x201D;, &#x90A3;&#x4E48; AVA &#x5E73;&#x53F0;&#x5C31;&#x4F1A;&#x4E3A;&#x5BA2;&#x6237;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6CA1;&#x6709;&#x6302;&#x8F7D;&#x4EFB;&#x4F55;&#x6570;&#x636E;&#x96C6;&#x7684;&#x5BB9;&#x5668;&#xFF1B;</p>
-<p> <img src="../images/ch-05/5.2/use-dataset.png" alt=""></p>
-</li>
-</ol>
-<ol>
-<li><p>&#x9009;&#x62E9;&#x955C;&#x50CF;</p>
-<p> &#x7528;&#x6237;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x81EA;&#x5DF1;&#x9700;&#x8981;&#x7684;&#x955C;&#x50CF;&#x6765;&#x542F;&#x52A8;&#x5BB9;&#x5668;&#x8FDB;&#x884C;&#x8C03;&#x8BD5;. </p>
-<p> <img src="../images/ch-05/5.2/use-image.png" alt=""></p>
-</li>
-<li><p>&#x9009;&#x62E9;&#x8D44;&#x6E90;</p>
-<p> <img src="../images/ch-05/5.2/use-resource.png" alt=""></p>
-</li>
-</ol>
-<p>&#x5DE5;&#x4F5C;&#x53F0;&#x521B;&#x5EFA;&#x6210;&#x529F;&#x540E;, &#x53EF;&#x4EE5;&#x5728;&#x5DE5;&#x4F5C;&#x53F0;&#x5217;&#x8868;&#x4E2D;&#x67E5;&#x770B;&#x5230;&#x8FD9;&#x4E2A;&#x5DE5;&#x4F5C;&#x53F0;&#x7684;&#x72B6;&#x6001;, &#x5982;&#x679C;&#x542F;&#x52A8;&#x6210;&#x529F;&#x540E;, &#x8FD9;&#x4E2A;&#x5DE5;&#x4F5C;&#x53F0;&#x7684;&#x72B6;&#x6001;&#x5C31;&#x5904;&#x4E8E;&#x201C;&#x6267;&#x884C;&#x4E2D;&#x201D;. </p>
-<p><img src="../images/ch-05/5.2/workspace-status.png" alt=""></p>
-<h2 id="2-juypterlab"><a name="2-juypterlab" class="plugin-anchor" href="#2-juypterlab"><i class="fa fa-link" aria-hidden="true"></i></a>2. JuypterLab</h2>
-<p>&#x627E;&#x5230;&#x4F60;&#x60F3;&#x8FDB;&#x5165;&#x7684;&#x5DE5;&#x4F5C;&#x53F0;, &#x70B9;&#x51FB;&#x4E0A;&#x56FE;&#x7D2B;&#x8272;&#x6846;&#x51FA;&#x6765;&#x7684; JuypterLab &#x7684;&#x56FE;&#x6807;, &#x6253;&#x5F00; JupyterLab. </p>
-<p><img src="../images/ch-05/5.2/jupyterlab-launcher.png" alt=""></p>
-<p>&#x4F7F;&#x7528; JuypterLab &#x53EF;&#x4EE5;&#x7F16;&#x5199;&#x4EE3;&#x7801;. &#x4F7F;&#x7528; JuypterLab &#x8C03;&#x8BD5;&#x8BAD;&#x7EC3;. &#x4F7F;&#x7528; JuypterLab &#x53EF;&#x4EE5;&#x6253;&#x5F00; Terminal, &#x8FDB;&#x5165;&#x5230;&#x7EC4;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x76EE;&#x5F55;&#x4E2D;, &#x67E5;&#x770B;&#x8FD9;&#x4E2A;&#x8BAD;&#x7EC3;&#x7684; log, &#x4F8B;&#x5982;:</p>
+<li><p>&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x7535;&#x8111;&#x4E0A;&#x751F;&#x6210; SSH &#x5BA2;&#x6237;&#x7AEF;&#x5BC6;&#x94A5;&#xFF0C;&#x5728;&#x672C;&#x5730;Terminal&#x5185;&#x8F93;&#x5165;:</p>
+<pre><code class="lang-sh"> $ ssh-keygen -t rsa -C <span class="hljs-string">&quot;&lt;your-email&gt;&quot;</span> -b 4096
+</code></pre>
+<p> &#x5C06; <code>&lt;your-email&gt;</code> &#x66FF;&#x6362;&#x4E3A;&#x81EA;&#x5DF1;&#x7684;&#x90AE;&#x7BB1;&#x5730;&#x5740;, &#x9ED8;&#x8BA4;&#x5BC6;&#x94A5;&#x751F;&#x6210;&#x5728; <code>~/.ssh/id_rsa</code>, &#x5305;&#x542B;&#x79C1;&#x94A5; <code>~/.ssh/id_rsa</code> &#x548C;&#x5BF9;&#x5E94;&#x516C;&#x94A5; <code>~/.ssh/id_rsa.pub</code>.</p>
+<blockquote>
+<p><strong>[info] Tips:</strong></p>
 <ul>
-<li><p>&#x5728;&#x5DE5;&#x4F5C;&#x53F0;&#x4E2D;&#x67E5;&#x770B;&#x8BAD;&#x7EC3;&#x4EFB;&#x52A1;&#x4EA7;&#x751F;&#x7684; log (&#x5728; <code>/workspace/mnt/group/[group_name]/[user_name]/run</code> &#x76EE;&#x5F55;&#x4E0B;) : </p>
-<p>  <img src="../images/ch-05/5.2/workspace-terminal.png" alt=""></p>
-</li>
-<li><p>&#x4F7F;&#x7528; Jupyter Notebook &#x8C03;&#x8BD5; Python &#x4EE3;&#x7801;: </p>
-<p>  <img src="../images/ch-05/5.2/workspace-notebook.png" alt=""></p>
-</li>
-<li><p>&#x7F16;&#x8F91; Markdown &#x6587;&#x6863;:</p>
-<p>  <img src="../images/ch-05/5.2/workspace-markdown.png" alt=""></p>
-</li>
+<li>&#x8BF7;&#x4FDD;&#x62A4;&#x597D;&#x79C1;&#x94A5;, &#x516C;&#x94A5;&#x53EF;&#x63D0;&#x4F9B;&#x7ED9;&#x9700;&#x8981;&#x8FDE;&#x63A5;&#x7684;&#x670D;&#x52A1;&#x65B9;. <strong>&#x79C1;&#x94A5;&#x610F;&#x5916;&#x6CC4;&#x9732;&#x540E;&#x8BF7;&#x7ACB;&#x5373;&#x4FEE;&#x6539;</strong></li>
+<li>&#x751F;&#x6210;&#x5BC6;&#x94A5;&#x65F6;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x542F;&#x7528;&#x5BC6;&#x7801;, &#x6BCF;&#x6B21;&#x4F7F;&#x7528;&#x5BC6;&#x94A5;&#x65F6;&#x9700;&#x8F93;&#x5165;&#x5BC6;&#x7801;</li>
+<li>&#x5982;&#x679C;&#x9009;&#x62E9;&#x5C06;&#x5BC6;&#x94A5;&#x751F;&#x6210;&#x5728;&#x5176;&#x5B83;&#x76EE;&#x5F55;, &#x767B;&#x5F55;&#x65F6;&#x9700;&#x6307;&#x5B9A;&#x79C1;&#x94A5;&#x8DEF;&#x5F84;, &#x8BE6;&#x89C1;&#x4E0B;&#x6587;</li>
 </ul>
-<h2 id="3-&#x7EC8;&#x6B62;&#x5DE5;&#x4F5C;&#x53F0;"><a name="3-&#x7EC8;&#x6B62;&#x5DE5;&#x4F5C;&#x53F0;" class="plugin-anchor" href="#3-&#x7EC8;&#x6B62;&#x5DE5;&#x4F5C;&#x53F0;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x7EC8;&#x6B62;&#x5DE5;&#x4F5C;&#x53F0;</h2>
-<p>&#x6BCF;&#x4E2A;&#x5DE5;&#x4F5C;&#x53F0;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E0D;&#x80FD;&#x8D85;&#x8FC7; 24 &#x5C0F;&#x65F6;, &#x5982;&#x679C;&#x8D85;&#x8FC7; 24 &#x5C0F;&#x65F6;, &#x5E73;&#x53F0;&#x4F1A;&#x81EA;&#x52A8;&#x628A;&#x8FD9;&#x4E2A;&#x5DE5;&#x4F5C;&#x53F0;&#x5360;&#x7528;&#x7684;&#x8D44;&#x6E90;&#x91CA;&#x653E;. &#x5DF2;&#x7ECF;&#x4FDD;&#x5B58;&#x5728;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x4E0D;&#x4F1A;&#x4E22;&#x5931;. &#x5F53;&#x7136;, &#x7528;&#x6237;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x4F7F;&#x7528;&#x5B8C;&#x5DE5;&#x4F5C;&#x53F0;&#x4E4B;&#x540E;, &#x624B;&#x52A8;&#x7EC8;&#x6B62;&#x5DE5;&#x4F5C;&#x53F0;, &#x91CA;&#x653E;&#x5360;&#x7528;&#x7684;&#x8D44;&#x6E90;. </p>
-<p><img src="../images/ch-05/5.2/workspace-stop.png" alt=""></p>
-<p>&#x7EC8;&#x6B62;&#x5DE5;&#x4F5C;&#x53F0;&#x4E4B;&#x540E;, &#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x5DE5;&#x4F5C;&#x53F0;&#x5BF9;&#x5E94;&#x7684;&#x5BB9;&#x5668;&#x5C31;&#x88AB;&#x5173;&#x95ED;&#x4E86;, &#x4E5F;&#x5C31;&#x4E0D;&#x80FD;&#x518D;&#x901A;&#x8FC7; JuypterLab &#x767B;&#x5F55;&#x5230;&#x5BB9;&#x5668;&#x4E2D;. </p>
-<h2 id="4-&#x542F;&#x52A8;&#x5DE5;&#x4F5C;&#x53F0;"><a name="4-&#x542F;&#x52A8;&#x5DE5;&#x4F5C;&#x53F0;" class="plugin-anchor" href="#4-&#x542F;&#x52A8;&#x5DE5;&#x4F5C;&#x53F0;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x542F;&#x52A8;&#x5DE5;&#x4F5C;&#x53F0;</h2>
-<p>&#x5BF9;&#x4E8E;&#x5DF2;&#x7ECF;&#x7EC8;&#x6B62;&#x7684;&#x5DE5;&#x4F5C;&#x53F0;, &#x5982;&#x679C;&#x7528;&#x6237;&#x8FD8;&#x9700;&#x8981;&#x4F7F;&#x7528;, &#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x70B9;&#x51FB;&#x201C;&#x542F;&#x52A8;&#x5DE5;&#x4F5C;&#x53F0;&#x201D;&#x7684; icon,&#x518D;&#x6B21;&#x6309;&#x7167;&#x8FD9;&#x4E2A;&#x5DE5;&#x4F5C;&#x53F0;&#x7684;&#x914D;&#x7F6E;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;. </p>
-<p><img src="../images/ch-05/5.2/workspace-start.png" alt=""></p>
-<h2 id="5-&#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x53F0;&#x8BE6;&#x60C5;"><a name="5-&#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x53F0;&#x8BE6;&#x60C5;" class="plugin-anchor" href="#5-&#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x53F0;&#x8BE6;&#x60C5;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x53F0;&#x8BE6;&#x60C5;</h2>
-<p>&#x5BF9;&#x4E8E; AVA &#x5E73;&#x53F0;&#x4E2D;&#x7684;&#x5DE5;&#x4F5C;&#x53F0;, &#x7528;&#x6237;&#x53EF;&#x4EE5;&#x70B9;&#x51FB;&#x5DE5;&#x4F5C;&#x53F0;&#x540D;&#x79F0;, &#x8FDB;&#x5165;&#x5230;&#x5DE5;&#x4F5C;&#x53F0;&#x8BE6;&#x60C5;&#x9875;&#x9762;&#x53BB;&#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x53F0;&#x7684;&#x8BE6;&#x60C5;&#x4FE1;&#x606F;. &#x5177;&#x4F53;&#x5305;&#x62EC;&#x5BB9;&#x5668;&#x4F7F;&#x7528;&#x7684;&#x8D44;&#x6E90;, &#x7EC4;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x8D44;&#x6E90;&#x76EE;&#x5F55;, 
-Bucket &#x76EE;&#x5F55;, &#x4EE5;&#x53CA;&#x6302;&#x8F7D;&#x7684;&#x6570;&#x636E;&#x96C6;&#x7B49;. </p>
-<p><img src="../images/ch-05/5.2/workspace-detail.png" alt=""></p>
-<p>&#x5982;&#x679C;&#x7528;&#x6237;&#x5728;&#x8C03;&#x8BD5;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;, &#x9700;&#x8981;&#x66F4;&#x597D;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x96C6;, &#x53EA;&#x9700;&#x5148;&#x201C;&#x7EC8;&#x6B62;&#x5DE5;&#x4F5C;&#x53F0;&#x201D;, &#x4F7F;&#x8BE5;&#x5DE5;&#x4F5C;&#x53F0;&#x53D8;&#x6210;&#x201C;&#x5B8C;&#x6210;&#x201D;&#x72B6;&#x6001;, &#x7136;&#x540E;&#x5728;&#x5DE5;&#x4F5C;&#x53F0;&#x8BE6;&#x60C5;&#x4E2D;&#x66F4;&#x6362;&#x6570;&#x636E;&#x96C6;. </p>
-<p><img src="../images/ch-05/5.2/change-dateset.png" alt=""></p>
+</blockquote>
+</li>
+<li><p>&#x767B;&#x5F55; AVA Portal, &#x5728;&#x3010;&#x8BBE;&#x7F6E;&#x3011;&#x9875;&#x9762;&#x4E2D;&#x3010;&#x65B0;&#x5EFA;SSH Key&#x3011;.&#x5C06;&#x516C;&#x94A5;&#x7C98;&#x8D34;&#x8FDB;&#x53BB;&#xFF0C;&#x70B9;&#x51FB;&#x3010;&#x786E;&#x5B9A;&#x3011;.</p>
+<p> <img src="../images/ch-05/5.6/new-public-key.png" alt="new public key"></p>
+</li>
+</ol>
+<h2 id="&#x767B;&#x5F55;&#x5DE5;&#x4F5C;&#x53F0;"><a name="&#x767B;&#x5F55;&#x5DE5;&#x4F5C;&#x53F0;" class="plugin-anchor" href="#&#x767B;&#x5F55;&#x5DE5;&#x4F5C;&#x53F0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x767B;&#x5F55;&#x5DE5;&#x4F5C;&#x53F0;</h2>
+<p>&#x542F;&#x52A8;&#x5DE5;&#x4F5C;&#x53F0;&#x540E;, &#x67E5;&#x770B; SSH &#x7AEF;&#x53E3;, &#x590D;&#x5236;&#x767B;&#x5F55;&#x547D;&#x4EE4;, &#x5982; <code>ssh root@&lt;server-host&gt; -p &lt;port&gt;</code> </p>
+<p><img src="../images/ch-05/5.6/copy-command.png" alt="copy command"></p>
+<p>&#x5728;&#x672C;&#x5730;&#x7EC8;&#x7AEF;&#x6267;&#x884C;&#x590D;&#x5236;&#x7684; <code>ssh</code> &#x547D;&#x4EE4;, &#x9996;&#x6B21;&#x767B;&#x5F55;&#x9700;&#x786E;&#x8BA4;&#x670D;&#x52A1;&#x7AEF;&#x516C;&#x94A5;&#x6307;&#x7EB9;:</p>
+<pre><code class="lang-bash">$ ssh root@ssh.ava.atlab.ai -p &lt;port&gt;
+The authenticity of host <span class="hljs-string">&apos;[ssh.ava.atlab.ai]:&lt;port&gt; ([&lt;server-ip&gt;]:&lt;port&gt;)&apos;</span> can<span class="hljs-string">&apos;t be established.
+ECDSA key fingerprint is &lt;server-public-key-fingerprint&gt;.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added &apos;</span>[ssh.ava.atlab.ai]:&lt;port&gt;,[&lt;server-ip&gt;]:&lt;port&gt;<span class="hljs-string">&apos; (ECDSA) to the list of known hosts.
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.0-72-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+root@&lt;your-workspace-name&gt;:~#
+</span></code></pre>
+<blockquote>
+<p><strong>[info] Tips:</strong></p>
+<ul>
+<li>&#x5DE5;&#x4F5C;&#x53F0;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x6302;&#x8F7D;&#x5F53;&#x65F6;&#x5DF2;&#x7ECF;&#x6709;&#x7684;&#x516C;&#x94A5;, &#x4E4B;&#x540E;&#x6DFB;&#x52A0;&#x5220;&#x9664;&#x90FD;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;&#x7684;&#x5DE5;&#x4F5C;&#x53F0;</li>
+<li>&#x5982;&#x679C;&#x4E0D;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x5BC6;&#x94A5;, &#x767B;&#x5F55;&#x65F6;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x79C1;&#x94A5;&#x8DEF;&#x5F84;: <code>ssh root@ssh.ava.atlab.ai -p &lt;port&gt; -i &lt;/path/to/your/private/key&gt;</code></li>
+</ul>
+</blockquote>
+<h2 id="ssh-tips"><a name="ssh-tips" class="plugin-anchor" href="#ssh-tips"><i class="fa fa-link" aria-hidden="true"></i></a>SSH Tips</h2>
+<h3 id="&#x4F7F;&#x7528;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="&#x4F7F;&#x7528;&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="plugin-anchor" href="#&#x4F7F;&#x7528;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x672C;&#x5730; SSH &#x914D;&#x7F6E;&#x6587;&#x4EF6; (&#x9ED8;&#x8BA4;&#x5728; ~/.ssh/config, &#x6CA1;&#x6709;&#x5219;&#x65B0;&#x5EFA;) &#x7B80;&#x5316;&#x767B;&#x5F55;&#x8FC7;&#x7A0B;, &#x5E76;&#x914D;&#x7F6E;&#x4E0D;&#x540C;&#x670D;&#x52A1;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x5BC6;&#x94A5;:</p>
+<pre><code>Host workspace                                  # &#x914D;&#x7F6E;&#x540D;&#x79F0;
+    HostName ssh.ava.atlab.ai                   # SSH &#x670D;&#x52A1;&#x7AEF; host, &#x4E5F;&#x53EF;&#x4EE5;&#x662F; IP
+    User root                                   # SSH &#x767B;&#x5F55;&#x7528;&#x6237;&#x540D;
+    Port &lt;port&gt;                                 # port
+    IdentityFile &lt;/path/to/your/private/key&gt;    # &#x5728; AVA Portal &#x6CE8;&#x518C;&#x7684;&#x516C;&#x94A5;&#x5BF9;&#x5E94;&#x7684;&#x79C1;&#x94A5;&#x8DEF;&#x5F84;
+
+# github, gitlab &#x7B49;&#x670D;&#x52A1;&#x53EF;&#x53C2;&#x8003; workspace &#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x914D;&#x7F6E;
+
+Host *                                          # &#x53C2;&#x8003;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;
+    ControlMaster auto
+    ControlPath ~/.ssh/%h-%p-%r
+    ControlPersist yes
+    ServerAliveInterval 300
+    ServerAliveCountMax 60
+</code></pre><p>&#x4E4B;&#x540E;&#x5373;&#x53EF;&#x6267;&#x884C; <code>ssh workspace</code> &#x5FEB;&#x901F;&#x767B;&#x5F55;.</p>
+<h3 id="pycharm-&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;"><a name="pycharm-&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;" class="plugin-anchor" href="#pycharm-&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>PyCharm &#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;</h3>
+<p>PyCharm &#x4E13;&#x4E1A;&#x7248;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; SSH &#x4F7F;&#x7528;&#x670D;&#x52A1;&#x7AEF;&#x7684; Python &#x73AF;&#x5883;&#x8FDB;&#x884C;&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;, &#x907F;&#x514D;&#x5F00;&#x53D1;&#x4E0E;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x4E0D;&#x4E00;&#x81F4;, &#x4E14;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8C03;&#x8BD5; GPU
+&#x4EE3;&#x7801;. &#x8BF7;&#x53C2;&#x9605; PyCharm &#x7528;&#x6237;&#x6587;&#x6863;<a href="https://www.jetbrains.com/help/pycharm/configuring-remote-interpreters-via-ssh.html" target="_blank">&#x914D;&#x7F6E; &#x8FDC;&#x7A0B; Python &#x89E3;&#x91CA;&#x5668;</a>&#x5E76;<a href="https://www.jetbrains.com/help/pycharm/remote-debugging-with-product.html" target="_blank">&#x90E8;&#x7F72;&#x672C;&#x5730;&#x4EE3;&#x7801;&#x81F3;&#x670D;&#x52A1;&#x7AEF;</a>.</p>
+<blockquote>
+<p><strong>[warning] Warning:</strong></p>
+<p>&#x5F53;&#x524D; PyCharm &#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;&#x53EA;&#x80FD;&#x8FDB;&#x884C; Debug, &#x4E0D;&#x80FD; Run</p>
+</blockquote>
 
                                 
                                 </section>
@@ -585,12 +600,12 @@ Bucket &#x76EE;&#x5F55;, &#x4EE5;&#x53CA;&#x6302;&#x8F7D;&#x7684;&#x6570;&#x636E
 
             
                 
-                <a href="5.1-dataset.html" class="navigation navigation-prev " aria-label="Previous page: 5.1 数据集管理">
+                <a href="5.2-workspace.html" class="navigation navigation-prev " aria-label="Previous page: 5.2 工作台管理">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="5.2.1-ssh.html" class="navigation navigation-next " aria-label="Next page: 5.2.1 使用 SSH 登录工作台">
+                <a href="5.2.2-snapshot.html" class="navigation navigation-next " aria-label="Next page: 5.2.2 创建工作台快照">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -601,7 +616,7 @@ Bucket &#x76EE;&#x5F55;, &#x4EE5;&#x53CA;&#x6302;&#x8F7D;&#x7684;&#x6570;&#x636E
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5.2 工作台管理","level":"1.6.2","depth":2,"next":{"title":"5.2.1 使用 SSH 登录工作台","level":"1.6.2.1","depth":3,"path":"05-tasks/5.2.1-ssh.md","ref":"05-tasks/5.2.1-ssh.md","articles":[]},"previous":{"title":"5.1 数据集管理","level":"1.6.1","depth":2,"path":"05-tasks/5.1-dataset.md","ref":"05-tasks/5.1-dataset.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-plus","alerts","edit-link","copy-code-button","anchors"],"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"alerts":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/qiniu-ava/handbook/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"05-tasks/5.2-workspace.md","mtime":"2018-11-26T00:36:53.385Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-26T00:38:07.722Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5.2.1 使用 SSH 登录工作台","level":"1.6.2.1","depth":3,"next":{"title":"5.2.2 创建工作台快照","level":"1.6.2.2","depth":3,"path":"05-tasks/5.2.2-snapshot.md","ref":"05-tasks/5.2.2-snapshot.md","articles":[]},"previous":{"title":"5.2 工作台管理","level":"1.6.2","depth":2,"path":"05-tasks/5.2-workspace.md","ref":"05-tasks/5.2-workspace.md","articles":[{"title":"5.2.1 使用 SSH 登录工作台","level":"1.6.2.1","depth":3,"path":"05-tasks/5.2.1-ssh.md","ref":"05-tasks/5.2.1-ssh.md","articles":[]},{"title":"5.2.2 创建工作台快照","level":"1.6.2.2","depth":3,"path":"05-tasks/5.2.2-snapshot.md","ref":"05-tasks/5.2.2-snapshot.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-plus","alerts","edit-link","copy-code-button","anchors"],"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"alerts":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/qiniu-ava/handbook/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"05-tasks/5.2.1-ssh.md","mtime":"2018-11-26T00:36:53.385Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-26T00:38:07.722Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
