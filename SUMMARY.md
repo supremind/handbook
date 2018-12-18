@@ -9,6 +9,7 @@
     * [3.4 Quota](/03-concepts/3.4-quota.md)
     * [3.5 镜像](/03-concepts/3.5-image.md)
     * [3.6 模型](/03-concepts/3.6-model.md)
+    * [3.7 工作流](/03-concepts/3.7-workflow.md)
 * [4 AVA 申请注册流程](/04-register.md)
 * [5 AVA 基础教程](/05-tasks/5.0-tasks.md)
     * [5.1 数据集管理](/05-tasks/5.1-dataset.md)
