@@ -1,6 +1,5 @@
 # Summary
 
-* [Introduction](readme.md)
 * [1 概述](01-introduction.md)
 * [2 Quick Start](02-quick-start.md)
 * [3 AVA 基础概念](03-concepts/3.0-concepts.md)
@@ -22,6 +21,7 @@
         * [5.3.1 分布式训练管理](05-tasks/5.3.1-distributed.md)
     * [5.4 模型管理](05-tasks/5.4-model.md)
     * [5.5 镜像管理](05-tasks/5.5-image.md)
+    * [5.6 工作流管理](/05-tasks/5.6-workflow.md)
 * [6 Tutorial: 训练图像分类模型](06-tutorial-classification/6.0-classification.md)
     * [6.1 准备数据集 (数据集管理方式)](06-tutorial-classification/6.1-dataset-with-jsonlist.md)
     * [6.2 准备数据集 (组/Bucket 共享方式)](06-tutorial-classification/6.2-dataset-with-sharing.md)
@@ -29,4 +29,3 @@
 * [7 Tutorial: 训练 OCR 模型](07-tutorial-OCR/ocr.md)
 * [8 Tutorial: 训练 SSD 模型](08-tutorial-SSD/ssd.md)
 * [9 FAQ](09-faq/faq.md)
-
