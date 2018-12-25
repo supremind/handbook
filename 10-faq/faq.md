@@ -15,11 +15,11 @@
 
 - 我明明关闭了所有的工作台窗口, 为什么还有 Jupyter Kernel 进程占用资源呢?
     
-    ![](/images/ch-09/workspace-kernel-proc.png)
+    ![](/images/ch-10/workspace-kernel-proc.png)
 
     关闭浏览器窗口并不会终止 Jupyter Notebook 进程, 对应的 Jupyter Kernel 仍然在后台运行. 如需终止, 需要在 Notebook 页面, 或侧边栏 [Running] => [Kernel Sessions] 中点击 Shutdown. IPython Console 和 Terminal 进程同理.
 
-    ![](/images/ch-09/workspace-shutdown-kernel.png)
+    ![](/images/ch-10/workspace-shutdown-kernel.png)
 
 ## 训练
 
