@@ -32,17 +32,15 @@
     >reg.qiniu.com/common/public-mxnet:public-test
 
     执行入口：
-    ```dockerfile
-    wget {{inputs.parameters.url}} -O {{inputs.parameters.videoname}} && mv  {{inputs.parameters.videoname}} {{inputs.parameters.dir}}
-    ```
+    >wget {{inputs.parameters.url}} -O {{inputs.parameters.videoname}} && mv  {{inputs.parameters.videoname}} {{inputs.parameters.dir}}
+
 + ffmpeg
     镜像地址：
     >reg.qiniu.com/avatest/detect-reader:20181212-31fbdc6
 
     执行入口：
-    ```dockerfile
-    mkdir -p {{inputs.parameters.src-dir}} && cd {{inputs.parameters.dir}} && ffmpeg -i {{inputs.parameters.videoname}} -f image2 -vf fps=fps={{inputs.parameters.fps}} {{inputs.parameters.src-dir}}/{{inputs.parameters.videoname}}-%d.jpg
-    ```
+    >mkdir -p {{inputs.parameters.src-dir}} && cd {{inputs.parameters.dir}} && ffmpeg -i {{inputs.parameters.videoname}} -f image2 -vf fps=fps={{inputs.parameters.fps}} {{inputs.parameters.src-dir}}/{{inputs.parameters.videoname}}-%d.jpg
+
 + get-upload-conf
 
     镜像地址：
@@ -51,30 +49,25 @@
     执行入口：
     
     通过qshell get获取配置文件（配置文件必须在bucket中）
-    ```dockerfile
-    qshell account {{inputs.parameters.ak}} {{inputs.parameters.sk}} {{inputs.parameters.username}} && qshell get {{inputs.parameters.bucket}} {{inputs.parameters.configname}} && mv {{inputs.parameters.configname}} {{inputs.parameters.dir}}
-    ```
+    >qshell account {{inputs.parameters.ak}} {{inputs.parameters.sk}} {{inputs.parameters.username}} && qshell get {{inputs.parameters.bucket}} {{inputs.parameters.configname}} && mv {{inputs.parameters.configname}} {{inputs.parameters.dir}}
 
     通过wget获取配置文件（需要配置文件的url）
-    ```dockerfile
-    wget {{inputs.parameters.configurl}} -O {{inputs.parameters.configname}} && mv {{inputs.parameters.configname}} {{inputs.parameters.dir}}
-    ```
+    >wget {{inputs.parameters.configurl}} -O {{inputs.parameters.configname}} && mv {{inputs.parameters.configname}} {{inputs.parameters.dir}}
+
 + upload-screenshoot
 
     镜像地址：
     >rreg.qiniu.com/avatest/qshell:20181211-2020
 
     执行入口：
-    ```dockerfile
-    cd {{inputs.parameters.dir}} && qshell account {{inputs.parameters.ak}} {{inputs.parameters.sk}} {{inputs.parameters.username}} && qshell qupload {{inputs.parameters.configname}}
-    ```
+    >cd {{inputs.parameters.dir}} && qshell account {{inputs.parameters.ak}} {{inputs.parameters.sk}} {{inputs.parameters.username}} && qshell qupload {{inputs.parameters.configname}}
+
     配置文件中的内容为：
-     ```dockerfile
-    {
+    >{
         "src_dir" : "xxx"（与输入参数中的src-dir一致),
         "bucket" : "xxx"
     }
-    ```
+    
     详情可参考[qshell](https://developer.qiniu.com/kodo/tools/1302/qshell)及[qshell qupload](https://github.com/qiniu/qshell/blob/master/docs/qupload.md)
 
 ### 创建工作流模版
