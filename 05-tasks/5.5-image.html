@@ -582,7 +582,6 @@
 <tr>
 <th>Image</th>
 <th>Python</th>
-<th>AVA SDK</th>
 <th>JupyterLab</th>
 <th>CPU</th>
 <th>CUDA</th>
@@ -591,21 +590,19 @@
 </thead>
 <tbody>
 <tr>
-<td>ava-sdk</td>
+<td>ava-root</td>
 <td>2.7/3.5</td>
 <td>&#x2713;</td>
 <td>&#x2713;</td>
-<td>&#x2713;</td>
-<td>8.0/9.0/9.1</td>
-<td>-</td>
+<td>8.0/9.0</td>
+<td>AVA&#x57FA;&#x7840;&#x955C;&#x50CF;</td>
 </tr>
 <tr>
 <td>ava-mxnet</td>
 <td>2.7/3.5</td>
 <td>&#x2713;</td>
 <td>&#x2713;</td>
-<td>&#x2713;</td>
-<td>8.0/9.0/9.1</td>
+<td>8.0/9.0</td>
 <td>MXNet</td>
 </tr>
 <tr>
@@ -613,8 +610,7 @@
 <td>2.7/3.5</td>
 <td>&#x2713;</td>
 <td>&#x2713;</td>
-<td>&#x2713;</td>
-<td>8.0/9.0/9.1</td>
+<td>8.0/9.0</td>
 <td>Caffe</td>
 </tr>
 <tr>
@@ -622,8 +618,7 @@
 <td>2.7/3.5</td>
 <td>&#x2713;</td>
 <td>&#x2713;</td>
-<td>&#x2713;</td>
-<td>8.0/9.0/9.1</td>
+<td>8.0/9.0</td>
 <td>TensorFlow</td>
 </tr>
 <tr>
@@ -631,18 +626,25 @@
 <td>2.7/3.5</td>
 <td>&#x2713;</td>
 <td>&#x2713;</td>
-<td>&#x2713;</td>
-<td>8.0/9.0/9.1</td>
+<td>8.0/9.0</td>
 <td>PyTorch</td>
+</tr>
+<tr>
+<td>ava-monitor</td>
+<td>2.7/3.5</td>
+<td>&#x2713;</td>
+<td>&#x2713;</td>
+<td>8.0/9.0</td>
+<td>AVA&#x76D1;&#x63A7;&#x955C;&#x50CF;</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
 <ul>
 <li>AVA &#x516C;&#x5F00;&#x955C;&#x50CF;&#x90FD;&#x57FA;&#x4E8E; Ubuntu 16.04 &#x7F16;&#x8BD1;</li>
-<li>AVA &#x516C;&#x5F00;&#x955C;&#x50CF;&#x90FD;&#x5B89;&#x88C5;&#x4E86; JuypterLab, &#x53EA;&#x6709;&#x5B89;&#x88C5;&#x4E86; JupyterLab &#x7684;&#x955C;&#x50CF;&#x624D;&#x80FD;&#x5728; AVA &#x5DE5;&#x4F5C;&#x53F0;&#x4E2D;&#x4F7F;&#x7528;</li>
-<li>&#x516C;&#x5F00;&#x955C;&#x50CF;&#x4F7F;&#x7528; tag &#x533A;&#x5206;&#x4E0A;&#x6E38;&#x4F9D;&#x8D56;&#x7684;&#x7248;&#x672C;, &#x5982; ava-mxnet:py27-cuda80-cudnn6 &#x8868;&#x793A;&#x955C;&#x50CF;&#x4E2D;&#x5B89;&#x88C5;&#x4E86; Python 2.7, CUDA 8.0, CUDNN 6 &#x4EE5;&#x53CA;&#x6700;&#x65B0;&#x7248;&#x7684; MXNet</li>
-<li>CUDA &#x7248;&#x672C;&#x652F;&#x6301; Nvidia GPU &#x8BAD;&#x7EC3;&#x52A0;&#x901F;</li>
+<li>AVA &#x516C;&#x5F00;&#x955C;&#x50CF;&#x90FD;&#x5B89;&#x88C5;&#x4E86; JuypterLab, ssh &#x53CA; Python2.7/3.5&#xFF1B; &#x53EA;&#x6709;&#x5B89;&#x88C5;&#x4E86; JupyterLab &#x53CA; ssh &#x7684;&#x955C;&#x50CF;&#x624D;&#x80FD;&#x5728; AVA &#x5DE5;&#x4F5C;&#x53F0;&#x4E2D;&#x4F7F;&#x7528;</li>
+<li>CUDA &#x7248;&#x672C;&#x652F;&#x6301; Nvidia GPU &#x8BAD;&#x7EC3;&#x52A0;&#x901F;&#xFF0C;&#x955C;&#x50CF;&#x5747;&#x5DF2;&#x5B89;&#x88C5;CuDNN 7&#xFF0C; NCCL 2</li>
+<li>&#x516C;&#x5F00;&#x955C;&#x50CF;&#x4F7F;&#x7528; tag &#x533A;&#x5206;&#x4E0A;&#x6E38;&#x4F9D;&#x8D56;&#x7684;&#x7248;&#x672C;, &#x5982; ava-mxnet:1.4.0-cuda90 &#x8868;&#x793A;&#x955C;&#x50CF;&#x4E2D;&#x5B89;&#x88C5;&#x4E86; CUDA 9.0 &#x4EE5;&#x53CA;&#x6700;&#x65B0;&#x7248;&#x7684; MXNet</li>
 </ul>
 </blockquote>
 <h2 id="&#x81EA;&#x5B9A;&#x4E49;&#x955C;&#x50CF;"><a name="&#x81EA;&#x5B9A;&#x4E49;&#x955C;&#x50CF;" class="plugin-anchor" href="#&#x81EA;&#x5B9A;&#x4E49;&#x955C;&#x50CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x81EA;&#x5B9A;&#x4E49;&#x955C;&#x50CF;</h2>
@@ -740,7 +742,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5.5 镜像管理","level":"1.6.5","depth":2,"next":{"title":"5.6 工作流管理","level":"1.6.6","depth":2,"path":"05-tasks/5.6-workflow.md","ref":"05-tasks/5.6-workflow.md","articles":[]},"previous":{"title":"5.4 模型管理","level":"1.6.4","depth":2,"path":"05-tasks/5.4-model.md","ref":"05-tasks/5.4-model.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-plus","alerts","edit-link","copy-code-button","anchors"],"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"alerts":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/qiniu-ava/handbook/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"05-tasks/5.5-image.md","mtime":"2019-04-01T14:52:32.403Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-01T14:53:46.000Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5.5 镜像管理","level":"1.6.5","depth":2,"next":{"title":"5.6 工作流管理","level":"1.6.6","depth":2,"path":"05-tasks/5.6-workflow.md","ref":"05-tasks/5.6-workflow.md","articles":[]},"previous":{"title":"5.4 模型管理","level":"1.6.4","depth":2,"path":"05-tasks/5.4-model.md","ref":"05-tasks/5.4-model.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-plus","alerts","edit-link","copy-code-button","anchors"],"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"alerts":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/qiniu-ava/handbook/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"05-tasks/5.5-image.md","mtime":"2019-04-04T09:14:58.372Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-04T09:16:07.722Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
